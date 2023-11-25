@@ -1,0 +1,361 @@
+
+
+:root {
+  --cyan: hsl( 177, 68%, 64% );
+  --orange: hsl( 12, 94%, 65% );
+  --yellow: hsl( 33, 100%, 70% );
+  --off-white: hsl( 20, 33%, 98% );
+  --off-black: hsl( 244, 23%, 12% );
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: .625rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+  background: url( "./assets/bg-main-mobile.png" );
+  background-repeat: no-repeat;
+  background-position: -10% -20%;
+}
+
+.hero-pattern {
+  display: none;
+}
+
+/* =============================================================== */
+/* Header */
+/* =============================================================== */
+
+.header {
+  padding: 4rem 2.4rem 16.6rem;
+}
+
+.header .logo {
+  margin-bottom: 6.4rem;
+}
+
+.hero-area {
+  max-width: 520px;
+}
+
+.hero-area h1 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  margin-bottom: 2rem;
+}
+
+.hero-area p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+/* =============================================================== */
+/* Main */
+/* =============================================================== */
+
+.showcase-area {
+  position: relative;
+  height: 600px;
+  background-color: var( --off-black );
+}
+
+.illustration-app {
+  display: block;
+  width: 209px;
+  position: absolute;
+  top: -85px;
+  left: 50%;
+  transform: translateX( -50% );
+}
+
+.showcase-pattern {
+  display: block;
+  margin: auto;
+}
+
+.premium-box {
+  position: relative;
+  top: -40px;
+  background-color: var( --orange );
+  border-radius: 10px;
+  padding: 4.8rem 3.6rem;
+  color: var( --off-white );
+  max-width: 399px;
+  margin: auto;
+}
+
+.premium-box h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 1.2rem;
+}
+
+.premium-box p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 3.6rem;
+}
+
+.price-area {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.price-area span {
+  font-size: 6.5rem;
+  line-height: 5.2rem;
+  font-weight: 700;
+  margin-right: 1.5rem;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.ios-button {
+  margin-bottom: 1.6rem;
+  color: var( --off-white );
+  background-color: var( --off-black );
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.ios-button:hover {
+  background-color: var( --cyan );
+}
+
+.android-button:hover {
+  background-color: var( --yellow );
+}
+
+/* =============================================================== */
+/* Footer */
+/* =============================================================== */
+
+.footer {
+  padding: 425px 2.4rem 8rem;
+}
+
+.footer .logo {
+  margin-bottom: 3.2rem;
+}
+
+.footer p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 6.4rem;
+  max-width: 366px;
+}
+
+.footer p span {
+  font-weight: 700;
+}
+
+.footer .right img {
+  margin-right: 1.5rem;
+}
+
+.footer .right img:hover {
+  filter: invert(56%) sepia(35%) saturate(4607%) hue-rotate(329deg) brightness(103%) contrast(95%);
+  cursor: pointer;
+}
+
+@media screen and ( min-width: 768px ) {
+
+  .container {
+    padding: 0rem 3.6rem 0;
+    background: url( "./assets/bg-main-tablet.png" );
+    background-repeat: no-repeat;
+    background-position: 75% -40%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-pattern {
+    display: block;
+    position: absolute;
+    top: -2%;
+    right: -5%;
+    width: 266px;
+  }
+
+  .header {
+    padding-bottom: 24.9rem;
+    padding-top: 6.2rem;
+  }
+
+  .header .logo {
+    margin-bottom: 9.5rem;
+    height: 32px;
+  }
+
+  .hero-area {
+    width: 520px;
+    max-width: none;
+  }
+
+  .hero-area h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .hero-area p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    width: 514px;
+  }
+
+  .illustration-app {
+    width: 270px;
+    top: -22%;
+    left: 27%;
+    z-index: 1;
+  }
+
+  .showcase-pattern {
+    width: 280px;
+    position: relative;
+    top: -5%;
+  }
+
+  .premium-box {
+    width: 399px;
+    top: -44%;
+    left: 34%;
+    z-index: 2;
+    max-width: none;
+    margin: unset;
+  }
+
+  .footer {
+    padding-top: 18.3rem;
+    padding-bottom: 8.5rem;
+  }
+
+  .footer-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .logo {
+    height: 32px;
+  }
+
+  .footer p {
+    width: 366px;
+    max-width: none;
+  }
+
+  .footer .right img {
+    margin-right: 0;
+    margin-left: 1.5rem;
+  }
+
+}
+
+@media screen and ( min-width: 1440px ) {
+
+  .container {
+    padding: 0 16.5rem 0;
+    background: url( "./assets/bg-main-desktop.png" );
+    background-repeat: no-repeat;
+    background-position: 50% 110%;
+  }
+
+  .hero-pattern {
+    right: 0;
+    width: 312px;
+  }
+
+  .header {
+    padding: 6.2rem 0 32.1rem;
+  }
+
+  .hero-area {
+    width: 1015px;
+  }
+
+  .hero-area h1 {
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero-area p {
+    width: 825px;
+    font-size: 2rem;
+    line-height: 3.4rem;
+  }
+
+  .illustration-app {
+    width: 312px;
+    top: -35%;
+    left: 23%;
+  }
+
+  .showcase-pattern {
+    width: 312px;
+    top: -6%;
+    left: -6%;
+  }
+
+  .premium-box {
+    width: 446px;
+    left: 51%;
+    top: -60%;
+    padding: 4.8rem 5.6rem;
+  }
+
+  .premium-box h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .premium-box p {
+    font-size: 2rem;
+    line-height: 3.4rem;
+    margin-bottom: 3.9rem;
+  }
+
+  .price-area {
+    margin-bottom: 4.6rem;
+  }
+
+  .footer {
+    padding: 20.2rem 0 9.1rem;
+  }
+
+  .footer .logo {
+    margin-right: 14rem;
+  }
+
+  .footer .left {
+    display: flex;
+  }
+
+  .footer p {
+    margin-bottom: 0;
+  }
+
+}
